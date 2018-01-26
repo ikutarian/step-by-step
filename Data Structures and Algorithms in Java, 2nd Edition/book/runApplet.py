@@ -4,11 +4,9 @@
 import os
 
 if __name__=="__main__":
-    cwd = os.getcwd()
-    
     html_file = ''
-    for filename in os.listdir(cwd):
-        if (len(filename) >= 4) and filename[-4:] == 'html':
+    for filename in os.listdir(os.getcwd()):
+        if (len(filename) >= 4) and (filename[-4:] == 'html'):
             html_file = filename            
             break
             
